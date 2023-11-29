@@ -1,36 +1,21 @@
-
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import 'helper/style.dart';
 import 'home_screen.dart';
-
-
-
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
-
   @override
   State<SplashScreen> createState() => _SplashScreenState();
 }
-
 class _SplashScreenState extends State<SplashScreen> {
   String logo = 'assets/film.png';
   bool isLoading = true;
-
-
-
   @override
   void initState() {
     super.initState();
-
-
     redirect();
   }
-
-
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -76,13 +61,7 @@ class _SplashScreenState extends State<SplashScreen> {
     await Future.delayed(Duration(seconds: 2));
     Navigator.of(context).push(
       MaterialPageRoute(builder: (context) => HomeScreen()),
-
     );
 
-
   }
-
-
-
-
 }

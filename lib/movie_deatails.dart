@@ -10,21 +10,16 @@ import 'helper/const.dart';
 class movie_details_screen extends StatefulWidget {
   var movie_Data;
   movie_details_screen({Key? key, this.movie_Data}) : super(key: key);
-
   @override
   State<movie_details_screen> createState() => _movie_details_screenState();
 }
-
 class _movie_details_screenState extends State<movie_details_screen> {
   double containerOffset = 0.60;
 
   @override
   void initState() {
     super.initState();
-
   }
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -159,13 +154,4 @@ class _movie_details_screenState extends State<movie_details_screen> {
       ),
     );
   }
-
-
-
-
-
-
-
-
-
 }

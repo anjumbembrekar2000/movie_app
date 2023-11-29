@@ -1,5 +1,3 @@
-
-
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -8,10 +6,7 @@ import 'package:get/get_state_manager/src/simple/get_controllers.dart';
 import 'package:http/http.dart' as http;
 import '../helper/const.dart';
 import '../helper/loader.dart';
-
-
 class home_controller extends GetxController {
-
   RxBool isApiCallProcessing = false.obs;
   RxList Now_playing = [].obs;
   RxList originalNowPlaying = [].obs;
@@ -82,7 +77,4 @@ class home_controller extends GetxController {
       Now_playing.refresh();
     }
   }
-
-
-
 }
